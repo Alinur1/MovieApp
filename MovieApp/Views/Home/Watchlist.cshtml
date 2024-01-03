@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Movie>
+@{
+    ViewData["Title"] = "My Watchlist";
+}
+
+<center><h1>My Watchlist</h1></center>
+<a asp-controller="Home" asp-action="CreateWatchlist" class="btn btn-primary">Add To Watchlist</a>
+<br />
+<br />
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Price</th>
+            <th>Added Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var obj in Model)
+        {
+            <tr>
+                <td>@obj.MovieTitle</td>
+                <td>@obj.Genre</td>
+                <td>@obj.Price</td>
+                <td>@obj.AddedDate</td>
+                <td>
+                    <a asp-controller="Home" asp-action="EditWatchlist" asp-route-id="@obj.Id" class="btn btn-dark">Edit</a>
+                    <a asp-controller="Home" asp-action="DeleteWatchlist" asp-route-id="@obj.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts{
+@{
+    <partial name="_ValidationScriptsPartial" />
+}
+}

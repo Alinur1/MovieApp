@@ -1,0 +1,38 @@
+﻿@model Movie
+
+@{
+    ViewData["Title"] = "Create Watchlist";
+}
+
+<center><h1>Add Something in your watchlist</h1></center>
+<a asp-controller="Home" asp-action="Index" class="btn btn-primary">Go Home</a>
+<a asp-controller="Home" asp-action="Watchlist" class="btn btn-primary">Your Watchlist</a>
+<br />
+<br />
+
+<form method="post">
+    <label asp-for="MovieTitle">Movie Title*</label>
+    <input asp-for="MovieTitle" class="form-control"/>
+    <span asp-validation-for="MovieTitle" class="text-danger"></span>
+    <br />
+
+    <label asp-for="Genre">Genre</label>
+    <input asp-for="Genre" value="N/A" class="form-control" />
+    <br />
+
+    <label asp-for="Price">Price</label>
+    <input asp-for="Price" value="0.00" class="form-control" />
+    <span asp-validation-for="Price" class="text-danger"></span>
+
+    <br />
+
+    <button type="submit" class="btn btn-success">Submit</button>
+
+</form>
+
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+        }
+}
