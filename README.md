@@ -1,0 +1,1 @@
+This is an web app where a person can track his/her movie, series, drama etc. whether he/she watched it or not. It’s a simple CRUD web app, built using ASP.NET 6.0 in MVC format.![Screenshot 2024-01-03 211013](https://github.com/Alinur1/MovieApp/assets/87419413/99321c43-898d-4088-bd36-6b77a6a2b5e9)
