@@ -539,3 +539,4 @@ D:\Dot net\Projects\MovieApp\MovieApp\bin\Debug\net6.0\runtimes\unix\lib\net6.0\
 D:\Dot net\Projects\MovieApp\MovieApp\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 D:\Dot net\Projects\MovieApp\MovieApp\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Dot net\Projects\MovieApp\MovieApp\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Dot net\Projects\MovieApp\MovieApp\obj\Debug\net6.0\MovieApp.sourcelink.json
